@@ -5,4 +5,16 @@
   list-style: none;
 }
 
+body {
+  display: flex;
+}
+
+.leftcontainer {
+  background-color: red;
+}
+
+.rightcontainer {
+  background-color: blue;
+}
+
 /*# sourceMappingURL=styles.css.map */

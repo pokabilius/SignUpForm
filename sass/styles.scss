@@ -4,3 +4,17 @@
     box-sizing: border-box;
     list-style: none;
 }
+
+body {
+    display: flex;
+}
+
+.leftcontainer {
+    background-color: red;
+    // flex: 1;
+}
+
+.rightcontainer {
+    background-color: blue;
+    // flex: 2;
+}
