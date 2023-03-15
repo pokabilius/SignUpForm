@@ -1,20 +1,131 @@
+@font-face {
+    font-family: myFont;
+    src: url(../css/fonts/Norse-Bold.otf) format('truetype');
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+    
 }
 
-body {
+
+$font-color:#FAF5E9;
+
+
+
+body{
+    justify-content: center;
+    align-items: center;
     display: flex;
+    flex-direction: column;
+    background-color: black;
+    .container{
+        position: absolute;
+        left: 10vw;
+        top: 10vh;
+        right: 10vw;
+        bottom: 10vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        .leftcolumn {
+            background: url(../images/background.jpg) no-repeat center center;
+            background-size: cover;
+            flex: 1;
+            width: 300px;
+            height: 800px;
+            // width: 70vw;
+            // height: 80vh;
+            .logocontainer{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                color: $font-color;
+                // flex-wrap: wrap;
+                .image{
+                    scale: 0.5;
+                    margin-left: 5px;
+                }
+                .text{
+                    position: relative;
+                    font-size: 7rem;
+                    margin-right: 100px;
+                    font-family: myFont;
+                    
+
+                }
+            }
+        }
+        
+        .rightcolumn {
+            background-color: white;
+            flex: 2;
+            width: 200px;
+            height: 800px;
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+            .formcontainer{
+                display: flex;
+                flex-direction: column;
+                align-items: center ;
+                gap: 50px;
+                
+              
+                input{
+                    width: 350px;
+                    height: 40px;
+                }
+                .formtext{
+                    align-self: self-start;
+                    padding: 20px;
+                    font-size: 3rem;
+                    font-family: Arial, Helvetica, sans-serif;
+                    
+                    
+                }
+                .formcells{
+                    align-self: self-start;
+                    display: flex;
+                    justify-content: space-between;
+                    gap: 100px;
+                    margin-left: 10px;
+                    .leftform{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+                    }
+                    .rightform{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+                    }
+                }
+                .bottom{
+                    align-self: self-start;
+                    padding: 20px;
+                    font-size: 1.5rem;
+                    margin: 10px;
+                    margin-top: 50px;
+                    button{
+                        width: 200px;
+                        height: 60px;
+                        padding: 10px;
+                        border-radius: 5px;
+                        background-color: #596D48;
+                        font-size: 1.2rem;
+                        color: white;
+                        font-weight: bold;
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        }
+    }
 }
 
-.leftcontainer {
-    background-color: red;
-    // flex: 1;
-}
-
-.rightcontainer {
-    background-color: blue;
-    // flex: 2;
-}
