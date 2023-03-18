@@ -3,6 +3,10 @@
     src: url(../css/fonts/Norse-Bold.otf) format('truetype');
 }
 
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap');
+
+
 * {
     margin: 0;
     padding: 0;
@@ -12,16 +16,9 @@
     
 }
 
-
 $font-color:#FAF5E9;
 
-
-
 body{
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
     background-color: black;
     .container{
         position: absolute;
@@ -37,27 +34,36 @@ body{
             background: url(../images/background.jpg) no-repeat center center;
             background-size: cover;
             flex: 1;
-            width: 300px;
-            height: 800px;
-            // width: 70vw;
-            // height: 80vh;
+            height: 50rem;
+            position: relative;
+            min-width: 35rem;
+            .bg{
+                background-color: grey;
+                width: 100%;
+                height: 14rem;
+                position: absolute;
+                top: 10rem;
+                opacity: 0.5;
+            }
             .logocontainer{
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
                 color: $font-color;
+                position: relative;
+                width: 100%;
+                position: absolute;
+                top: 1rem;
                 // flex-wrap: wrap;
                 .image{
-                    scale: 0.5;
-                    margin-left: 5px;
+                    scale: 0.4;
+                    margin-left: 2rem;
                 }
                 .text{
-                    position: relative;
+                    position: absolute;
                     font-size: 7rem;
-                    margin-right: 100px;
+                    right: 15rem;
                     font-family: myFont;
-                    
-
                 }
             }
         }
@@ -65,8 +71,8 @@ body{
         .rightcolumn {
             background-color: white;
             flex: 2;
-            width: 200px;
-            height: 800px;
+            min-width: 70rem;
+            height: 50rem;
             display: flex;
             flex-direction: column;
             gap: 50px;
@@ -75,30 +81,46 @@ body{
                 flex-direction: column;
                 align-items: center ;
                 gap: 50px;
-                
-              
+                position: relative;
                 input{
                     width: 350px;
                     height: 40px;
+                    border-radius: 0.5rem;
+                    padding: 5px;
+                    &:invalid{
+                        border-color: red;
+                    }
+                    
+                }
+                label{
+                    font-weight: bold;
                 }
                 .formtext{
                     align-self: self-start;
                     padding: 20px;
                     font-size: 3rem;
-                    font-family: Arial, Helvetica, sans-serif;
-                    
+                    font-family: 'Poppins', sans-serif;
+                    position: relative;
+                    left: 2rem;
                     
                 }
                 .formcells{
+                    position: absolute;
+                    left: 3.5rem;
+                    top: 10rem;
                     align-self: self-start;
                     display: flex;
                     justify-content: space-between;
                     gap: 100px;
-                    margin-left: 10px;
+                    // margin-left: 10px;
                     .leftform{
                         display: flex;
                         flex-direction: column;
                         gap: 10px;
+                        .message{
+                            color: red;
+                            font-size: 1rem;
+                        }
                     }
                     .rightform{
                         display: flex;
@@ -112,7 +134,11 @@ body{
                     font-size: 1.5rem;
                     margin: 10px;
                     margin-top: 50px;
+                    position: relative;
+                    top: 15rem;
+                    left: 2rem;
                     button{
+                        cursor: pointer;
                         width: 200px;
                         height: 60px;
                         padding: 10px;
