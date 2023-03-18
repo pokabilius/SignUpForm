@@ -58,7 +58,7 @@ body .container .leftcolumn .logocontainer .image {
 body .container .leftcolumn .logocontainer .text {
   position: absolute;
   font-size: 7rem;
-  right: 15rem;
+  right: 5rem;
   font-family: myFont;
 }
 body .container .rightcolumn {
