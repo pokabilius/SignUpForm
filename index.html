@@ -6,54 +6,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SignUpForm</title>
     <link rel="stylesheet" href="./css/styles.css">
+    <script src="https://kit.fontawesome.com/1db0ccc3b1.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
-    <!-- Left Area with photo -->
-    <div class="container">
-        <div class="leftcolumn">
-            <div class="logocontainer">
-                <div class="image">
-                    <img src="./images/odin-lined.png" alt="odinimage">
-                </div>
-                <div class="text">
-                    Odin
-                </div> 
-            </div>   
-        </div>
-        <!-- Right Area with forms -->
-        <div class="rightcolumn">
-            <div class="formcontainer">
-                <div class="formtext">Please Fill below contact details</div>
-                <div class="formcells">
-                        <div class="leftform">
-                            <label for="first_name">First Name:</label>
-                            <input type="text" id="first_name" placeholder="Bob...">
-                            <label for="user_email">Email Address:</label>
-                            <input type="email" id="user_email" name="email" placeholder="you@example.com">
-                            <label for="pwd">Password:</label>
-                            <input type="password" id="pwd" name="pwd">
-                        </div>
-                    
-                        <div class="rightform">
-                            <label for="last_name">Last Name:</label>
-                            <input type="text" id="last_name" placeholder="Robinson...">
-                            <label for="phone">Phone Number:</label>
-                            <input type="tel" id="phone" name="phone">
-                     
-                            <label for="confirmpwd">Confirm Password:</label>
-                            <input type="password" id="confirmpwd" name="pwd">
-                        </div>
-                </div>
-                <div class="bottom">
-                    <div class="button">
-                        <button type="submit">Create Account</button>
+        <div class="container">
+            <!-- Left Area with photo -->
+            <div class="leftcolumn">
+                <div class="bg">f</div>
+                <div class="logocontainer">
+                    <div class="image">
+                        <img src="./images/odin-lined.png" alt="odinimage">
                     </div>
-                    <div class="login">
-                        Already hace an account? <a href="">Log in</a>
-                    </div>
+                    <div class="text">
+                        Odin
+                    </div> 
+                </div>   
+            </div>
+            <!-- Right Area with forms -->
+            <form>
+            <div class="rightcolumn">
+                <div class="formcontainer">
+                        <div class="formtext">Please Fill below contact details</div>
+                        <div class="formcells">
+                                <div class="leftform">
+                                    <label for="first_name">First Name:</label>
+                                    <input type="text" id="first_name" placeholder="Bob..." required>
+                                    <label for="user_email">Email Address:</label>
+                                    <input type="email" id="user_email" name="email" placeholder="you@example.com" required>
+                                    <label for="pwd">Password:</label>
+                                    <input type="password" id="pwd" name="pwd" required>
+                                    <p class="message"></p>
+                                </div>
+                            
+                                <div class="rightform">
+                                    <label for="last_name">Last Name:</label>
+                                    <input type="text" id="last_name" placeholder="Robinson..." required>
+                                    <label for="phone">Phone Number:</label>
+                                    <input type="tel" id="phone" minlength="10" maxlength="10" name="phone" required>
+                             
+                                    <label for="confirmpwd">Confirm Password:</label>
+                                    <input type="password" id="confirmpwd" name="pwd"  required>
+                                </div>
+                        </div>
+                        <div class="bottom">
+                            <div class="button">
+                                <button type="submit">Create Account</button>
+                            </div>
+                            <div class="login">
+                                Already have an account? <a href="">Log in</a>
+                            </div>
+                        </div>
                 </div>
             </div>
+            </form>
         </div>
-    </div>
+        <div class="footer">Copyright Pokabilius 2023 <a href="https://github.com/pokabilius/SignUpForm"><span class="fab fa-github" id="git"></span></a></div>
+        
+     <script src="./main.js"></script>   
 </body>
 </html>
